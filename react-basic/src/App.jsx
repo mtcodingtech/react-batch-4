@@ -1,8 +1,11 @@
 import Button from "./components/Button";
+import ComponentA from "./components/Hooks/PropsDrilling/ComponentA";
+import SimpleUseEffect from "./components/Hooks/UseEffect/SimpleUseEffect";
 import CRUD from "./components/Hooks/UseState/CRUD";
 import DynamicBox from "./components/Hooks/UseState/DynamicBox";
 import FormWithUseState from "./components/Hooks/UseState/FormWithUseState";
 import InputWithUseState from "./components/Hooks/UseState/InputWithUseState";
+import SelectImage from "./components/Hooks/UseState/SelectImage";
 import SimpleUseState from "./components/Hooks/UseState/SimpleUseState";
 import Logo from "./components/Logo";
 import Shop from "./components/Props/Shop";
@@ -30,7 +33,10 @@ function App() {
       {/* <SimpleUseState /> */}
       {/* <DynamicBox /> */}
       {/* <FormWithUseState /> */}
-      <CRUD />
+      {/* <CRUD /> */}
+      {/* <SelectImage /> */}
+      {/* <ComponentA /> */}
+      <SimpleUseEffect />
     </div>
   );
 }

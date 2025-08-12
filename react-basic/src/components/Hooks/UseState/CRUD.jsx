@@ -20,6 +20,9 @@ function CRUD() {
     setItems(updateItems)
     setEditIndex(null)
   };
+  const deleteItem = (index) => {
+    setItems(items.filter((_, i) => i !== index))
+  }
   return (
     <>
       <h1>Create, Read, Update, Delete</h1>
@@ -47,6 +50,7 @@ function CRUD() {
               <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
                 <p>{item}</p>
                 <button onClick={() => setEditIndex(index)}>Edit</button>
+                <button onClick={() => deleteItem(index)}>Delete</button>
               </div>
             )}
           </React.Fragment>
